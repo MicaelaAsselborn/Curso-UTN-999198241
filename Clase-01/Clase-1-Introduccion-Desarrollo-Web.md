@@ -27,7 +27,8 @@
 
      **_Plus:_**
 
-   - **Auto Rename Tag** - Para HTML
+   - **Material Icon Theme** - Para tener iconos
+   - **Auto Complete Tag** - Para HTML
    - **Prettier** - Para formateo de código
 
 ### ⚡ Configuración de Live Server
@@ -156,9 +157,10 @@ El desarrollo web es el proceso de crear sitios web y aplicaciones que se ejecut
 
 ### 🔗 Enlaces Útiles
 
-- [MDN Web Docs](https://developer.mozilla.org/es/) - Documentación oficial
 - [W3Schools](https://www.w3schools.com/) - Tutoriales interactivos
+- [MDN Web Docs](https://developer.mozilla.org/es/) - Documentación oficial
 - [CSS-Tricks](https://css-tricks.com/) - Trucos de CSS
+- [Tabla Periodica HTML](https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/)
 - [Stack Overflow](https://stackoverflow.com/) - Comunidad de desarrolladores
 
 ### 📖 Libros Recomendados
