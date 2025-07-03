@@ -5,6 +5,7 @@
 ## Clases disponibles
 
 - [📝 Clase 01 - Introducción al Desarrollo Web](./Clase-01/Clase-1-Introduccion-Desarrollo-Web.md)
+- [📝 Clase 02 - Introduccion HTML](./Clase-02/Clase-2-Introduccion-HTML.md)
 
 ---
 
