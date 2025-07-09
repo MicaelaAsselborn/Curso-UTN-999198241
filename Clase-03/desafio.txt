@@ -1,0 +1,7 @@
+lograr que el container con los section se vean en horizontales pero que los section ocupen siempre el 30% de la pantalla.
+teniendo 5 sections:
+linea 1 3 sections de 30%
+linea 2 2 section de 30%
+con espaciado entre los section tanto lateral como entre lineas.
+
+ayuda: hay que usar display:flex en el container
