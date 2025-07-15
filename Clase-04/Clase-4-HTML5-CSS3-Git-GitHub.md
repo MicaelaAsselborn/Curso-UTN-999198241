@@ -610,7 +610,7 @@ section {
 }
 
 .consejos h4 {
-  color: #856404;
+  color: rgb(213, 172, 48);
   margin-top: 0;
 }
 
