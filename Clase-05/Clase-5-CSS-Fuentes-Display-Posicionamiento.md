@@ -780,6 +780,8 @@ Crear una página de portafolio personal que incluya:
 - [CSS Display](https://developer.mozilla.org/es/docs/Web/CSS/display) - Documentación MDN
 - [CSS Position](https://developer.mozilla.org/es/docs/Web/CSS/position) - Guía completa
 - [CSS Z-Index](https://developer.mozilla.org/es/docs/Web/CSS/z-index) - Explicación detallada
+- [Fontello](https://fontello.com/) - Para crear una fuente custom de iconos
+- [Font Awesome](https://fontawesome.com/v4/icons/) - Fuente con varios iconos ya lista para usar
 
 ### 📖 Conceptos para Investigar
 

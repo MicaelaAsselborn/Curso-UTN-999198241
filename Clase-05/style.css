@@ -1,0 +1,58 @@
+body {
+  background-color: aqua;
+  margin: 0;
+}
+
+.container {
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 5px;
+  width: 90vw;
+  width: 90dvw;
+
+  height: 50vh;
+  height: 50dvh;
+
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  height: 50%;
+  margin-left: auto;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.container .circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 10px solid blue;
+  position: relative;
+}
+
+.container .circle::after,
+.container .circle::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container .circle::after {
+  background-color: yellow;
+}
+.container .circle::before {
+  background-color: green;
+}
