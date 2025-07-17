@@ -1,0 +1,45 @@
+body {
+  height: 90vh;
+  display: grid;
+  grid-template-areas:
+    'nav    header    publicidad publicidad'
+    'nav    productos publicidad publicidad'
+    'nav    productos publicidad publicidad'
+    'nav    servicios publicidad publicidad'
+    'footer footer    publicidad publicidad';
+
+  grid-template-rows: 100px 1fr 1fr 1fr 75px;
+  grid-template-columns: 20% auto auto 15%;
+}
+
+body > * {
+  border: 1px solid black;
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  grid-area: footer;
+  background-color: tomato;
+}
+section#productos {
+  grid-area: productos;
+  background-color: violet;
+}
+section#servicios {
+  grid-area: servicios;
+  background-color: green;
+}
+nav {
+  grid-area: nav;
+  background-color: yellow;
+}
+aside {
+  grid-area: publicidad;
+  background-color: orange;
+}
