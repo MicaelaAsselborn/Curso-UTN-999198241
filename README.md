@@ -9,6 +9,6 @@
 - [📝 Clase 03 - Introduccion CSS](./Clase-03/Clase-3-Introduccion-CSS.md)
 - [📝 Clase 04 - Integrar HTML5 y CSS3 con control de versiones](./Clase-04/Clase-4-HTML5-CSS3-Git-GitHub.md)
 - [📝 Clase 05 - Fuentes, Display y Posicionamiento](./Clase-05/Clase-5-CSS-Fuentes-Display-Posicionamiento.md)
-- ***
+- [📝 Clase 06 - CSS Flexbox Grid](./Clase-06/Clase-6-CSS-Flexbox-Grid.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
