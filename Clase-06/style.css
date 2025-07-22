@@ -9,7 +9,7 @@ body {
     'footer footer    publicidad publicidad';
 
   grid-template-rows: 100px 1fr 1fr 1fr 75px;
-  grid-template-columns: 20% auto auto 15%;
+  grid-template-columns: 20% auto auto;
 }
 
 body > * {
@@ -23,6 +23,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 footer {
   grid-area: footer;
   background-color: tomato;
@@ -42,4 +43,14 @@ nav {
 aside {
   grid-area: publicidad;
   background-color: orange;
+
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li.selected {
+  order: 1;
 }
