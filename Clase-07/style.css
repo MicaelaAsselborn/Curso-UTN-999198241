@@ -1,0 +1,231 @@
+:root {
+  --size: 400px;
+  --primary: blueviolet;
+  --primary-hover: violet;
+
+  --tarjeta-width: 300px;
+  --tarjeta-height: 200px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ------------- */
+
+.box {
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--primary);
+  transition: rotate 0.3s ease;
+}
+
+.box:hover {
+  background-color: var(--primary-hover);
+  transform: rotate(30deg) scale(1.5);
+}
+
+/* ------------- */
+
+.boton-transform {
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton-transform:hover {
+  transform: translateY(-3px) scale(1.05);
+  /* transition: transform 0.3s ease; */
+  /*  lo coloco en en la clase .bton-transform para que aplique a todos los eventos
+	ya se active, focus, hover, etc */
+}
+
+.boton-transform:active {
+  transform: translateY(0) scale(0.95);
+  /* transition: transform 0.3s ease; */
+}
+
+/* ------------- */
+
+.tarjeta-3d {
+  position: relative;
+  width: var(--tarjeta-width);
+  height: var(--tarjeta-height);
+  perspective: 1000px;
+}
+
+.tarjeta-frente,
+.tarjeta-dorso {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease;
+}
+
+.tarjeta-frente {
+  background-color: #007bff;
+  color: white;
+  transform: rotateY(0deg);
+}
+
+.tarjeta-dorso {
+  background-color: #28a745;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.tarjeta-3d:hover .tarjeta-frente {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-3d:hover .tarjeta-dorso {
+  transform: rotateY(360deg);
+}
+
+/* ------------- */
+
+.cursor {
+  cursor: alias;
+  height: 30px;
+  width: 200px;
+  background-color: red;
+}
+
+.galeria-zoom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.galeria-zoom .fakeImage {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+}
+
+.menu-deslizante ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-deslizante a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.menu-deslizante a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.menu-deslizante a:hover {
+  color: #007bff;
+}
+
+.menu-deslizante a:hover::after {
+  width: 100%;
+}
+
+.rebote-animado {
+  animation: rebote 1s ease-in-out infinite alternate;
+  width: 40px;
+  height: 40px;
+  background-color: #28a745;
+}
+
+@keyframes rebote {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes entrada-desde-abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contenedor-animaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.elemento-entrada {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  animation: entrada-desde-abajo 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.elemento-entrada:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.elemento-entrada:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.elemento-entrada:nth-child(3) {
+  animation-delay: 0.3s;
+}
