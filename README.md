@@ -10,5 +10,6 @@
 - [📝 Clase 04 - Integrar HTML5 y CSS3 con control de versiones](./Clase-04/Clase-4-HTML5-CSS3-Git-GitHub.md)
 - [📝 Clase 05 - Fuentes, Display y Posicionamiento](./Clase-05/Clase-5-CSS-Fuentes-Display-Posicionamiento.md)
 - [📝 Clase 06 - CSS Flexbox Grid](./Clase-06/Clase-6-CSS-Flexbox-Grid.md)
+- [📝 Clase 07 - Transformaciones, Transiciones y Animaciones](./Clase-07/Clase-7-CSS-Transformaciones-Transiciones-Animaciones.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
