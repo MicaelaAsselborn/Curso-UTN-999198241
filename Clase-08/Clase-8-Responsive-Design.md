@@ -428,6 +428,12 @@
 
 ### 🍔 Menú Hamburger
 
+**Puntos clave:**
+
+- El menú se abre/cierra al marcar/desmarcar el checkbox.
+- El ícono de hamburguesa se anima solo con CSS.
+- Es accesible por teclado y fácil de mantener.
+
 ```html
 <nav class="navegacion-responsive">
   <div class="logo">Logo</div>
@@ -461,7 +467,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: #69584c;
   color: white;
 }
 
@@ -513,10 +519,10 @@
 
   .menu {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #69584c;
     flex-direction: column;
     padding: 1rem;
     transform: translateY(-100%);
@@ -528,7 +534,7 @@
 
   .menu-toggle-checkbox:checked ~ .menu-toggle + .menu,
   .menu-toggle-checkbox:checked + .menu-toggle + .menu {
-    transform: translateY(0);
+    transform: translateY(75px);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -550,54 +556,17 @@
 }
 
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(6px, -5.5px);
 }
 ```
 
-### 🎯 Menú Hamburguesa solo con HTML y CSS
-
-Ahora el menú hamburguesa funciona solo con HTML y CSS usando un checkbox oculto. No se requiere JavaScript.
-
-**Puntos clave:**
-
-- El menú se abre/cierra al marcar/desmarcar el checkbox.
-- El ícono de hamburguesa se anima solo con CSS.
-- Es accesible por teclado y fácil de mantener.
-
-```html
-<nav class="navegacion-responsive">
-  <div class="logo">Logo</div>
-  <input
-    type="checkbox"
-    id="menu-toggle"
-    class="menu-toggle-checkbox"
-    aria-label="Abrir menú"
-  />
-  <label
-    for="menu-toggle"
-    class="menu-toggle"
-    tabindex="0"
-    aria-label="Abrir menú"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <ul class="menu">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
-```
-
-## El CSS necesario ya está incluido en los bloques anteriores.
+---
 
 ## 📱 Tipografía Responsiva
 
