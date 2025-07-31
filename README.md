@@ -13,5 +13,6 @@
 - [📝 Clase 07 - Transformaciones, Transiciones y Animaciones](./Clase-07/Clase-7-CSS-Transformaciones-Transiciones-Animaciones.md)
 - [📝 Clase 08 - Responsive Design](./Clase-08/Clase-8-Responsive-Design.md)
 - [📝 Clase 09 - Maquetacion Web Bootstrap](./Clase-09/Clase-9-Maquetacion-Web-Bootstrap.md)
+- [📝 Clase 10 - Practica Integradora HTML CSS Bootstrap](./Clase-10/Clase-10-Practica-Integradora-HTML-CSS-Bootstrap.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
