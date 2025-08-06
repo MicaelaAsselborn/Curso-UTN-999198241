@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 300px;
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 600px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 900px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 90%;
+    max-width: 1440px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 100%;
+  }
+}
+
+h1 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#description {
+  background-color: aquamarine;
+}
+#skills {
+  background-color: chartreuse;
+}
+#projects {
+  background-color: coral;
+}
+#services {
+  background-color: cyan;
+}
+#contact {
+  background-color: darksalmon;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
