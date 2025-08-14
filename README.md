@@ -16,5 +16,6 @@
 - [📝 Clase 10 - Practica Integradora HTML CSS Bootstrap](./Clase-10/Clase-10-Practica-Integradora-HTML-CSS-Bootstrap.md)
 - [📝 Clase 12 - Introduccion JavaScript](./Clase-12/Clase-12-Introduccion-JavaScript.md)
 - [📝 Clase 13 - Condicionales y Arreglos](./Clase-13/Clase-13-Condicionales-Arreglos.md)
+- [📝 Clase-14 - Practica JavaScript](./Clase-14/Clase-14-Practica-JavaScript.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
