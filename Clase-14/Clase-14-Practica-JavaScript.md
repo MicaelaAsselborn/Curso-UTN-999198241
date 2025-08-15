@@ -91,7 +91,7 @@ Puedes crear un archivo HTML con un formulario sencillo para capturar datos del 
 
 ### 1. Saludo Personalizado
 
-- Pide al usuario su nombre y edad (con `prompt()`)
+- Pide al usuario su nombre y edad
 - Muestra un mensaje personalizado usando ambos datos
 
 ### 2. Calculadora Simple
