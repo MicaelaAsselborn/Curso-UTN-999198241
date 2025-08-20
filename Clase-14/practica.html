@@ -4,16 +4,72 @@
     <meta charset="UTF-8" />
     <title>Practica</title>
   </head>
+  <style>
+    section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+      gap: 4px;
+    }
+  </style>
   <body>
-    <section class="practica-1"></section>
-    <section class="practica-2"></section>
+    <section class="practica-1">
+      <form id="p1">
+        <label for="nombre-p1">Nombre: </label>
+        <input type="text" id="nombre-p1" required />
+
+        <label for="edad-p1">Edad: </label>
+        <input type="number" id="edad-p1" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="mensaje-p1"></div>
+    </section>
+
+    <section class="practica-2">
+      <form id="p2">
+        <label for="numero1-p2">Número 1: </label>
+        <input type="number" id="numero1-p2" required />
+
+        <label for="numero2-p2">Número 2: </label>
+        <input type="number" id="numero2-p2" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="mensaje-p2"></div>
+    </section>
+
     <section class="practica-3"></section>
     <section class="practica-4"></section>
     <section class="practica-5"></section>
-    <section class="practica-6"></section>
+    <section class="practica-6">
+      <form id="p6">
+        <label for="nombre-p6">Nombre a buscar: </label>
+        <input type="text" id="nombre-p6" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="mensaje-p6"></div>
+    </section>
     <section class="practica-7"></section>
-    <section class="practica-8"></section>
+    <section class="practica-8">
+      <form id="p8">
+        <label for="texto-p8">Nombre a buscar: </label>
+        <textarea type="text" id="texto-p8" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="mensaje-p8"></div>
+    </section>
     <section class="practica-9"></section>
     <section class="practica-10"></section>
+
+    <script src="./js/ejercicio-01.js"></script>
+    <script src="./js/ejercicio-02.js"></script>
+    <script src="./js/ejercicio-06.js"></script>
+    <script src="./js/ejercicio-08.js"></script>
   </body>
 </html>
