@@ -17,5 +17,6 @@
 - [📝 Clase 12 - Introduccion JavaScript](./Clase-12/Clase-12-Introduccion-JavaScript.md)
 - [📝 Clase 13 - Condicionales y Arreglos](./Clase-13/Clase-13-Condicionales-Arreglos.md)
 - [📝 Clase-14 - Practica JavaScript](./Clase-14/Clase-14-Practica-JavaScript.md)
+- [📝 Clase-15 - Funciones y Ciclos](./Clase-15/Clase-15-Funciones-Ciclos.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
