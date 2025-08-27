@@ -19,5 +19,6 @@
 - [📝 Clase-14 - Practica JavaScript](./Clase-14/Clase-14-Practica-JavaScript.md)
 - [📝 Clase-15 - Funciones y Ciclos](./Clase-15/Clase-15-Funciones-Ciclos.md)
 - [📝 Clase-16 - Ejercitación Funciones y Ciclos](./Clase-16/Clase-16-Ejercitacion-Funciones-Ciclos.md)
+- [📝 Clase-17 - DOM y Eventos](./Clase-17/Clase-17-DOM-Eventos.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.

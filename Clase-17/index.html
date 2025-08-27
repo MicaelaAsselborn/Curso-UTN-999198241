@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-color: red !important;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css" />
+  <body style="background-color: blue">
+    <h1>ejemplo</h1>
+
+    <div class="contenedor">
+      <p>hola</p>
+      <p>como</p>
+      <p>estas?</p>
+    </div>
+
+    <button class="click-me" type="button">Click me!</button>
+
+    <div class="exterior">
+      <div class="interior">
+        <button>Click aquí</button>
+      </div>
+    </div>
+
+    <ul class="lista">
+      <li class="clase-1">1</li>
+      <li class="clase-2">2</li>
+      <li class="clase-3">3</li>
+      <li class="clase-4">4</li>
+      <li class="clase-5">5</li>
+    </ul>
+
+    <div class="caja"></div>
+
+    <select id="miSelect">
+      <option value="">Selecciona una opción</option>
+      <option value="op1">Opción 1</option>
+      <option value="op2">Opción 2</option>
+    </select>
+
+    <input type="checkbox" id="miCheckbox" /> Acepto los términos
+
+    <div
+      id="arrastrable"
+      draggable="true"
+      style="padding: 10px; border: 1px solid #ccc"
+    >
+      Arrástrame
+    </div>
+    <div
+      id="destino"
+      style="margin-top: 20px; padding: 20px; border: 2px dashed #999"
+    >
+      Suelta aquí
+    </div>
+
+    <script>
+      document.body.style.setProperty(
+        'background-color',
+        'aliceblue',
+        'important'
+      );
+
+      const nuevoParrafo = document.createElement('p');
+      nuevoParrafo.textContent = 'Este es un nuevo párrafo';
+
+      // Añadir al final
+      document.body.appendChild(nuevoParrafo);
+
+      setTimeout(() => {
+        const contenedor = document.querySelector('.contenedor');
+        const parrafoClonado = nuevoParrafo.cloneNode(true);
+        parrafoClonado.textContent = 'Clonado ' + parrafoClonado.textContent;
+        contenedor.insertBefore(parrafoClonado, contenedor.firstChild);
+
+        setTimeout(() => {
+          nuevoParrafo.remove(); // el del final del body
+        }, 5000);
+      }, 5000);
+
+      const boton = document.querySelector('button.click-me');
+      boton.addEventListener('click', function (evento) {
+        console.log('Botón clickeado');
+        console.log('Tipo de evento:', evento.type);
+        console.log('Elemento:', evento.target);
+      });
+
+      document.querySelector('.exterior').addEventListener(
+        'click',
+        (e) => {
+          console.log('Exterior');
+        },
+        true
+      ); // Capturing
+
+      document.querySelector('.interior').addEventListener('click', (e) => {
+        console.log('Interior');
+        // e.stopPropagation(); // Detener la propagación
+      });
+
+      document.querySelector('ul.lista').addEventListener('click', (e) => {
+        if (e.target.tagName === 'LI') {
+          console.log('Elemento de lista clickeado:', e.target.textContent);
+        }
+      });
+
+      // Mouse sobre un elemento
+      const caja = document.querySelector('.caja');
+      caja.addEventListener('mouseenter', () => {
+        caja.style.backgroundColor = 'lightblue';
+      });
+
+      caja.addEventListener('mouseleave', () => {
+        caja.style.backgroundColor = '';
+      });
+
+      const select = document.getElementById('miSelect');
+      select.addEventListener('change', (e) => {
+        console.log(`Opción seleccionada: ${e.target.value}`);
+      });
+
+      // Evento change en checkbox
+      const checkbox = document.getElementById('miCheckbox');
+      checkbox.addEventListener('change', (e) => {
+        console.log(`Checkbox ${e.target.checked ? 'marcado' : 'desmarcado'}`);
+      });
+
+      const arrastrable = document.getElementById('arrastrable');
+      const destino = document.getElementById('destino');
+
+      arrastrable.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', e.target.id);
+        e.target.style.opacity = '0.5';
+      });
+
+      arrastrable.addEventListener('dragend', (e) => {
+        e.target.style.opacity = '1';
+      });
+
+      destino.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        destino.style.border = '2px dashed #000';
+        destino.style.backgroundColor = '#f0f0f0';
+      });
+
+      destino.addEventListener('dragleave', () => {
+        destino.style.border = '2px dashed #999';
+        destino.style.backgroundColor = '';
+      });
+
+      destino.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const id = e.dataTransfer.getData('text/plain');
+        const elemento = document.getElementById(id);
+        destino.appendChild(elemento);
+        destino.style.border = '2px dashed #999';
+        destino.style.backgroundColor = '#e8f5e9';
+        console.log('Elemento soltado en la zona');
+      });
+    </script>
+  </body>
+</html>
