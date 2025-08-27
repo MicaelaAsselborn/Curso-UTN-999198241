@@ -1,0 +1,22 @@
+body {
+  background-color: violet !important;
+}
+
+.exterior,
+.interior {
+  padding: 5px 10px;
+  border: 1px solid black;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.interior {
+  border-color: red;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  border-radius: 8px;
+}
