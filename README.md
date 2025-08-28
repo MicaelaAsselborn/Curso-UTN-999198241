@@ -20,5 +20,7 @@
 - [📝 Clase-15 - Funciones y Ciclos](./Clase-15/Clase-15-Funciones-Ciclos.md)
 - [📝 Clase-16 - Ejercitación Funciones y Ciclos](./Clase-16/Clase-16-Ejercitacion-Funciones-Ciclos.md)
 - [📝 Clase-17 - DOM y Eventos](./Clase-17/Clase-17-DOM-Eventos.md)
+- [📝 Clase-18 - TP en Clase](./Clase-18/Clase-18-Trabajo-Practico-DOM-Eventos.md)
+- [📝 Clase-18 - Objetos](./Clase-18/objetos.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
