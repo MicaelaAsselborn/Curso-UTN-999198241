@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 19 - POO y Asincronía (Demo)</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Clase 19: POO y Asincronía</h1>
+      <p>
+        Mini proyecto para explicar: Clases, Callbacks, Promesas, async/await y
+        Fetch con PokeAPI.
+      </p>
+    </header>
+
+    <main class="container grid">
+      <section class="card">
+        <h2>POO</h2>
+        <button id="btn-saludar" class="btn">Saludar (Persona)</button>
+        <button id="btn-producto" class="btn">Producto info</button>
+      </section>
+
+      <section class="card">
+        <h2>Asincronía</h2>
+        <button id="btn-callback" class="btn">Esperar 1s (Callback)</button>
+        <button id="btn-promesa" class="btn">Promesa simple</button>
+        <button id="btn-async" class="btn">Async/Await demo</button>
+      </section>
+
+      <section class="card">
+        <h2>Fetch + PokeAPI</h2>
+        <div class="row">
+          <input
+            id="pokemon-input"
+            class="input"
+            placeholder="pikachu, gengar..."
+          />
+        </div>
+
+        <div class="row">
+          <button id="btn-fetch-uno" class="btn">Fetch 1 Pokémon</button>
+
+          <button id="btn-fetch-paralelo" class="btn">
+            Fetch 3 en paralelo
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>POST JSON (reqres.in)</h3>
+        <div class="row">
+          <input id="post-name" class="input" placeholder="Nombre (ej: Ada)" />
+          <input id="post-job" class="input" placeholder="Trabajo (ej: Dev)" />
+        </div>
+        <button id="btn-post-demo" class="btn">POST demo (JSON)</button>
+      </section>
+
+      <section class="card full">
+        <h2>
+          Salida
+          <button id="btn-clear" class="btn" title="Limpiar salida">
+            Limpiar
+          </button>
+        </h2>
+        <pre id="output" class="output"></pre>
+      </section>
+    </main>
+
+    <footer class="container">
+      <small>
+        Fuente de datos:
+        <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">
+          <img
+            alt="PokéAPI"
+            src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_64.png"
+          />
+        </a>
+        ·
+        <a href="https://reqres.in/" target="_blank" rel="noreferrer">
+          <img
+            alt="reqres.in"
+            src="https://reqres.in/img/logo.png"
+            width="64"
+          />
+        </a>
+      </small>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
