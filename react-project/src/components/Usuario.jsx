@@ -9,6 +9,10 @@
 // }
 
 function Usuario({ nombre = 'ana', edad, apellido }) {
+  console.log('nombre', nombre);
+  console.log('edad', edad);
+  console.log('apellido', apellido);
+
   return (
     <div>
       <h2>{nombre}</h2>

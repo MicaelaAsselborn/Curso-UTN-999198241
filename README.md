@@ -26,5 +26,6 @@
 - [📝 Clase-20 - Repaso](./Clase-20/Clase-20-JSON-Repaso-Frontend.md)
 - [📝 Clase-21 - Introduccion-React](./Clase-21/Clase-21-Introduccion-React.md)
 - [📝 Clase-21 - JavaScript-vs-TypeScript](./Clase-21/Clase-21-Auxiliar-JavaScript-vs-TypeScript.md)
+- [📝 Clase-22 - Componentes-Prop](./Clase-22/Clase-22-Componentes-Props.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.

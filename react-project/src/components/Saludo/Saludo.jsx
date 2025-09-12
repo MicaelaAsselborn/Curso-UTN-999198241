@@ -1,6 +1,7 @@
 // function Saludo() {
 //   return <h1>¡Hola, React!</h1>;
 // }
+import './style.css';
 
 function Saludo(props) {
   const nombre = 'Ana';
@@ -9,7 +10,7 @@ function Saludo(props) {
   // console.log(nombre);
 
   return (
-    <div>
+    <div className='saludo'>
       <h2>Bienvenida, {nombre}!</h2>
       <h3>Edad: {props.edad}</h3>
     </div>
