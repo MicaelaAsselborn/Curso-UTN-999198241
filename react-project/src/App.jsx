@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import reactLogo from './assets/react.svg';
 // import viteLogo from '/vite.svg';
 import './App.css';
@@ -7,9 +7,24 @@ function App({ saludar }) {
   // [0] ->> valor para consultar
   // [1] ->> manera de modificar el valor
   // Mantengo el estado de contador
-  const [contador, setcontador] = useState(0);
+  const [contador, setContador] = useState(0);
 
   // 	logica de js
+
+  useEffect(() => {
+    // Código que se ejecuta después del render
+    console.log('Componente renderizado');
+
+    // Función de limpieza (opcional)
+    return () => {
+      console.log('Componente se va a desmontar');
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log('Effect Contador');
+    saludar(contador);
+  }, [contador]);
 
   return (
     <>
@@ -25,8 +40,7 @@ function App({ saludar }) {
       <div className='card'>
         <button
           onClick={() => {
-            setcontador((contador) => contador - 1);
-            saludar(contador);
+            setContador((contador) => contador - 1);
           }}
         >
           -
@@ -34,8 +48,7 @@ function App({ saludar }) {
         Contador is {contador}
         <button
           onClick={() => {
-            setcontador((contador) => contador + 1);
-            saludar(contador);
+            setContador((contador) => contador + 1);
           }}
         >
           +
