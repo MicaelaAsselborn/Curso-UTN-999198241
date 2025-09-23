@@ -22,7 +22,8 @@ function chau(n) {
 }
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
+  <>
     <App saludar={hola} />
 
     <App saludar={chau} />
@@ -38,5 +39,7 @@ createRoot(document.getElementById('root')).render(
 
     {/* <Usuario {...persona} /> */}
     {/*  */}
-  </StrictMode>
+  </>
+
+  // </StrictMode>
 );

@@ -29,5 +29,6 @@
 - [📝 Clase-22 - Componentes-Prop](./Clase-22/Clase-22-Componentes-Props.md)
 - [📝 Clase-23 - State, Hooks y Eventos](./Clase-23/Clase-23-State-Hooks-Eventos.md)
 - [📝 Clase-23 - State, Hooks y Eventos - Typescript](./Clase-23/Clase-23-State-Hooks-Eventos-TypeScript.md)
+- [📝 Clase-24 - Fragments y Formularios](./Clase-24/Clase-24-Fragments-Formularios.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
