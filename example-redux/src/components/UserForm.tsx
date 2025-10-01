@@ -13,7 +13,12 @@ export function UserForm({ initialValues, onSubmit }: UserFormProps) {
   );
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    console.log('e.target', e.target);
+    console.log('name', name);
+    console.log('value', value);
+
+    setFormData((prev) => ({ ...prev, [name]: value })); // { ..prev, name | lastname : value}
   };
 
   const handleSubmit = (e: FormEvent) => {
