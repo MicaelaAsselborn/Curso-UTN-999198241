@@ -32,6 +32,7 @@
 - [📝 Clase-24 - Fragments y Formularios](./Clase-24/Clase-24-Fragments-Formularios.md)
 - [📝 Clase-25 - Tutorial-ToDo](./Clase-25/Clase-25-Tutorial-ToDo-Vite-React-TS-Bootstrap.md)
 - [📝 Clase-26 - Routing](./Clase-26/Clase-26-Routing-React.md)
-- [📝 Clase-27 - Redux](./Clase-26/Clase-26-Redux-React.md)
+- [📝 Clase-26 - Redux](./Clase-26/Clase-26-Redux-React.md)
+- [📝 Clase-27 - Automatizacion](./Clase-27/Clase-27-Automatizacion.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
