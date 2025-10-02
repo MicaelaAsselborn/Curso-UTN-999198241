@@ -33,6 +33,7 @@
 - [📝 Clase-25 - Tutorial-ToDo](./Clase-25/Clase-25-Tutorial-ToDo-Vite-React-TS-Bootstrap.md)
 - [📝 Clase-26 - Routing](./Clase-26/Clase-26-Routing-React.md)
 - [📝 Clase-26 - Redux](./Clase-26/Clase-26-Redux-React.md)
-- [📝 Clase-27 - Automatizacion](./Clase-27/Clase-27-Automatizacion.md)
+- [📝 Clase-27 - Automatizacion](./Clase-27/Clase-27-Automatizacion-IA.md)
+- [📝 Clase-28 - Trabajo Practico Final Integrador](./Clase-28/Trabajo_Practico_Final_Integrador.md)
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
